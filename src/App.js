@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-
+import  img1 from "./img/img1.jpg"
+import  img2 from "./img/img2.jpg"
+import  img3 from "./img/img3.jpg"
+import  img4 from "./img/img4.jpg"
+import  img5 from "./img/img5.jpg"
+import Header from './components/Header.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Header/>
+      <div className='blocks'>
+      <div className='block'>
+        <h1 className='text'>HEY</h1>
+        <img className='img' alt=''  src={img1}/>
+      </div>
+      <div className='block'>
+        <h1 className='text'>LET'S</h1>
+      <img alt='' className='img' src={img2}/>
+      </div>
+      <div className='block'>
+        <h1 className='text'>GIVE</h1>
+      <img alt='' className='img' src={img3}/>
+      </div>
+      <div className='block'>
+        <h1 className='text'>ALL</h1>
+      <img alt='' className='img' src={img4}/>
+      </div>
+      <div className='block'>
+        <h1 className='text'>YOU CAN</h1>
+        <img alt='' className='img' src={img5} />
+      </div>
+      </div>
+      </div>
   );
 }
 
